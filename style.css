@@ -5,7 +5,7 @@ border-radius: 50%;
 }
 
 body{
-    background-color: rgba(241, 240, 240, 0.788);
+    background-color: rgb(247, 212, 13);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,19 +13,29 @@ body{
     font-family: Arial;
 }
 
+h1, p{
+    color: #0061fd;
+}
+
 .tarjeta{
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     border-radius: 0.5rem;
     width: 300px;
     text-align: center;
-    background-color: white;
+    background-color: rgba(236, 193, 3, 0.918);
     padding: 1rem;
+    transition: all 0.3s;
+}
+
+.tarjeta:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
 
 button{
-    background-color: #3B82F6;
+    background-color: #ffffff;
     font-size: 1.2rem;
-    color: white;
+    color: black;
     padding: 00.5rem 1rem;
     margin: 0.5rem;
     border: none;
@@ -33,5 +43,23 @@ button{
 }
 
 button:hover{
-    background-color: #68a0fa;
+    background-color: #f0eaea;
+    transition: all 0.3s;
+}
+
+body.dark{
+    background-color: #105fdd;
+    color: #f3f4f6;
+    transition: all 0.3s;
+}
+
+body.dark .tarjeta{
+    background-color: #0061fd;
+    transition: all 0.3s;
+}
+
+body.dark .tarjeta h1, 
+body.dark .tarjeta p {
+    color: rgba(236, 193, 3, 0.918);
+    transition: all 0.3s;
 }
